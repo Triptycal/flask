@@ -1,0 +1,40 @@
+<html>
+<body bgcolor="{{color}}"></body>
+<h2><center> Salary Slip </center></h2>
+<table>
+	<tr>
+		<td>Name: </td>
+		<td>{{name}} </td>
+	</tr>
+	<tr>
+		<td>Salary: </td>
+		<td>{{salary}}</td>
+	</tr>
+	<tr>
+		<td>Tax Rate</td>
+		{% if salary>=2000 %}
+			<td>20%</td>
+		{%else%}
+			<td>15%</td>
+		{% endif%}
+	</tr>
+	<tr>
+		<td>Actual Tax</td>
+		{% if salary>=2000 %}
+			<td>{{salary*20/100}}</td>
+		{%else%}
+			<td>{{salary*15/100}}</td>
+		{% endif%}
+		<
+	</tr>
+	<tr>
+		<td>Net salary: </td>
+		{% if salary>=2000 %}
+			<td>{{salary-(salary*20/100)}}</td>
+		{%else%}
+			<td>{{salary-(salary*15/100)}}</td>
+		{% endif%}
+		
+	</tr>
+</table>
+</html>
