@@ -1,0 +1,20 @@
+<html>
+<h2>
+	<center>
+		Employee Information System
+	</center>
+</h2>
+
+	<table>
+		<tr>
+			<td>S.no</td>
+			<td>Name</td>
+		</tr>
+	
+	{% for record in data %}
+	<tr>
+		<td> 1 </td>
+		{{record[1]}} <br>
+	{% endfor%}
+	</table>
+</html>
