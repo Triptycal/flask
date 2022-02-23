@@ -1,20 +1,24 @@
 <html>
-<h2>
-	<center>
-		Employee Information System
-	</center>
+
+{% for record in personal %}
+<h2> Employee Information System :<font color='green'> {{record[1]}} </font>
+<h2> Department :{{ record[2]}} <br>
+{% endfor %}
+<a href="http://localhost:5000/newrecordsalary/"> Add Payslip </a>
+Salary Details:<br>
+
 </h2>
 
 	<table>
-		<tr>
-			<td>S.no</td>
-			<td>Name</td>
-		</tr>
-	
-	{% for record in data %}
 	<tr>
-		<td> 1 </td>
-		{{record[1]}} <br>
+		<td><b>Date</b></td>
+		<td><b>Amount</b></td>
+	
+	{% for record in accounts %}
+	<tr>
+		<td>{{record[1]}}</td>
+		<td>{{record[2]}}</td>
+		<br>
 	{% endfor%}
 	</table>
 </html>

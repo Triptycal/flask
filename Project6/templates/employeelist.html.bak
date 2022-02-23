@@ -1,0 +1,11 @@
+<html>
+<h2><center>Employee List</center>
+<br>
+<form action="http://localhost:5000/departments/IT">
+
+<select name="dept">
+<option value="HR">Human Resources</option>
+<option value="IT">Information Technology</option>
+</select>
+	<input type="Submit" value="select">
+</html>
