@@ -1,0 +1,12 @@
+<html>
+<a href='http://localhost:5000/clear'> destry cookie </a>
+<h2><center>Select Number to Generate the Timestable of <br>
+	Select Range
+<br>
+<br>
+
+{% for i in range(1,10) %}
+	<a href="http://localhost:5000/page2/{{i}}"> {{i}} </a> <br>
+{% endfor %}
+
+</html>

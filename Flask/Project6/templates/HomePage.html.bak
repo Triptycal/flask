@@ -1,0 +1,31 @@
+<html>
+<h2>
+	<center>
+		Employee Information System
+	</center>
+</h2>
+<a href="http://localhost:5000/newrecord"> New Employee </a>
+</br>
+<b> List of Employees </b>
+<form action="http://localhost:5000/employeelist" method="POST">
+<select name="dept">
+<option disabled selected>---select an option---</option>
+<option value="HR">Human Resources</option>
+<option value="IT">Information Technology</option>
+<option value="ALL">Select All</option>
+</select>
+	<input type="Submit" value="show">
+</form>
+	<table>
+		<tr>
+			<td>S.no</td>
+			<td>Name</td>
+		</tr>
+	{% for record in data %}
+		<tr>
+			<td> 1 </td>
+			<td> <a href="http://localhost:5000/details/{{record[0]}}'> {{ record[1]}} </a></td>
+		</tr>
+	{% endfor%}
+	</table>
+</html>

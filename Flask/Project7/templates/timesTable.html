@@ -1,0 +1,12 @@
+<html>
+<a href='http://localhost:5000/clear'> destry cookie </a>
+<h2><center>Times Table of <font color='Green'><b>{{ session["timestable"] }} </b> <br>
+	Select Range
+<br>
+<br>
+
+{% for a in range(1,Range) %}
+	{{ session["timestable"]}} x {{a}} = {{a*session["timestable"]}} <br>
+{% endfor %}
+
+</html>

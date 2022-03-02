@@ -1,0 +1,25 @@
+<html>
+<script>
+	function checkData(){
+		let answer=true
+		if (num1.value==""){
+			alert("First Number is Missing!")
+			answer=false
+			num1.focus()
+		}
+		if (num2.value==""){
+			alert("Second Number is Missing!")
+			answer=false
+			num2.focus()
+		}
+	return answer
+	}
+</script>
+<h2><center>Timestable Generator</center>
+<br>
+<form action="http://localhost:5000/data" onsubmit="return checkData()" method="POST">
+
+	Enter First Number:<input id="num1" type="text" name="num1"><br>
+	Enter Second Number:<input id="num2" type="text" name="num2"><br>
+	<input type="Submit" value=Ok>
+</html>

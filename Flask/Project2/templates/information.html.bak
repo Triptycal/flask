@@ -1,0 +1,8 @@
+<html>
+<h2><center> Detail Information </center></h2>
+<br>
+<br>
+<b>Name:</b><u> {{ na }}</u>
+<br>
+<b>Address:</b><u> {{ addr }}</u>
+</html>
